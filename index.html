@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Off Numbers</title>
+</head>
+<body>
+    <h1>Odd Numbers from 1 to 100:</h1>
+    <div id="oddNumbers"></div>
+
+    <script>
+        let oddNumbers = '';
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 !== 0) {
+                oddNumbers += i + '<br>';
+            }
+        }
+        document.getElementById('oddNumbers').innerHTML = oddNumbers;
+    </script>
+</body>
+</html>
